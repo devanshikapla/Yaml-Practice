@@ -1,0 +1,24 @@
+"apple": "I am a red fruit"
+1: "This is my roll number"
+# YAML holds key and value pairs key -> values
+---
+#Lists
+-apple
+-banana
+-mango
+#Yaml is case sensitive
+---
+#--- helps yaml to know that these are three different kinds of documents
+#yaml is basically collection of documents
+#yaml doesnt store multilines comments
+
+#Block
+cities:
+  - new delhi
+  - mumbai
+  - Gujrat
+... #... means document is finished
+
+cities: [new delhi, mumbai]
+---
+{ mango: "Yello", age: 56 }
