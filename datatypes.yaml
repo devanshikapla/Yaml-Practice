@@ -1,0 +1,49 @@
+name: Devanshi Kapla #variable string
+fruit: "Apple" 
+job : 'swe' #string can be represented in three ways
+
+bio : | 
+hey may name is Devanshi Kapla
+i am a very nice person  #| means multiple lines of string
+#writing single line in multiple lines these lines will be treated as single line of comment
+
+message: > 
+this will be all be
+in one single line
+
+number : 5473 #integer
+marks : 98.76 #float
+bool : !!bool No # In Yaml true corresponds to yes where as false corresponds to no
+#specify the type
+#integers
+zero : !!int 0 
+positiveNum: !!int 45
+negativeNum: !!int -45
+binaryNum : !!int 0b11001
+octalNum: !!int 06574
+hexa: !!int 0x45
+commaValues : !!int +540_000 #540,000
+exponentialnumbers: !!int 6.023E56
+
+#floating point numbers
+marks: !!float 56.89
+infinity : !!float .inf
+notAnum: .nan 
+
+#null
+surname: !!null Null #or null NULL ~ 
+~: this is a null key
+
+#dates and times
+
+date: !!timestamp 2023-11-3
+
+India time: 2001-12-14T02:59:43.10 +5:30
+
+
+
+
+
+
+
+
