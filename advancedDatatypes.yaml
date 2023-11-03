@@ -1,0 +1,83 @@
+student: !!seq
+  - marks
+  - name
+  - roll_no
+#like this also
+students: [Devanshi , Vansh ]
+
+#some of the keys of the seq will be empty
+#sparse seq
+sparse seq:
+  - hey
+  - how
+  - 
+  - NULL
+  - sup
+  
+#nested sequence
+
+-
+ - mango
+ - apple
+ - banana
+-
+ - marks
+ - roll num
+ - date
+
+#key : value pairs are called maps
+
+!!map command help to create key value pairs
+
+#nested mappings : map within an map
+name: Devanshi
+role: 
+  age: 22
+  job: Student
+
+#same as role :{age: 22 , job: student}
+
+#pairs : keys may have duplicate value
+
+# !!pair
+
+pair : !!pairs
+  - job : student
+  - job : teacher
+  - job : SWE
+
+#same as
+pair: !!pairs [job: student , job: teacher , job: SWE]
+#this will be an array containing hash tables
+
+#!!set will allow you to have unique values
+
+names: !!set 
+  ? Devanshi
+  ? Aditya
+  ? Tanu
+  ? Khushi
+
+  # I can't have multiple names same
+#dictionary !!omap
+People: !!omap 
+  - Devanshi:
+       name: Devanshi Kapla
+       age: 22
+       job: SWE
+  - Khushi:
+       name: Khushi Goel
+       age: 22
+       job : VLSI intern
+#resuing some properties using anchors
+
+likings: &likes
+  fav fruit: mango
+  dislikes: grapes
+
+
+Person:
+  name: Devanshi
+  <<: *likes
+  dislikes: berries
+  

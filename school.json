@@ -1,0 +1,15 @@
+{
+    "School":[
+        {
+            "name":"DPS",
+            "principal":"Veena Bhasin",
+            "Students":[
+                {
+                    "rollNo":12,
+                    "name": "Devanshi Kapla", 
+                    "marks":100
+                }
+            ]
+        }
+    ]
+}

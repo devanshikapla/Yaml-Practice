@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding='UTF-8'>
+<School name="DPS" principal="Veena Bhasin">
+   <students>
+     <student>
+        <rollNo>
+            23
+        </rollNo>
+        <name>
+          "Devanshi"
+        </name>
+        <marks>
+           94
+        </marks>
+     </student>
+
+   </students>
+   
+
+</School>
